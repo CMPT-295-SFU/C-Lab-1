@@ -68,7 +68,7 @@ int insert_end(struct list *l, int val)
   {
     n->prev = l->last;
     n->next = NULL;
-    l->last = n;
+    l->last->next = n;
   }
   else
   {
